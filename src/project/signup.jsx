@@ -11,7 +11,7 @@ export default function Signup() {
     setUserObj({ ...userobj, [name]: value })
   }
   async function dosavesignup() {
-    const url = `http://localhost:2007/profile/new-signup`;
+    const url = `https://mern-project-2024.onrender.com/profile/new-signup`;
     alert(userobj.password);
     const serverMsg = await axios.post(url, userobj);
     if (serverMsg.data.status === true) {
