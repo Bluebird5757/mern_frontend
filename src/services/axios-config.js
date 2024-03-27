@@ -1,5 +1,6 @@
 import axios from "axios";
-const baseURL="http://localhost:2007";
+// const baseURL="http://localhost:2007";
+const baseURL="https://mern-project-2024.onrender.com"
 const publicAxios=axios.create({baseURL});
 const privateReq=axios.create({baseURL});
 privateReq.interceptors.request.use((config)=>
