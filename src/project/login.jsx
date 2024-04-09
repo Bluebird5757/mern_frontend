@@ -14,7 +14,7 @@ export default function Login() {
         setUserObj({ ...userobj, [name]: value })
     }
     async function dofetchsignup() {
-        const url = `http://localhost:2007/profile/fetch-signup`;
+        const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
 
         // alert(userobj.password);
         const serverMsg = await axios.post(url,userobj);
