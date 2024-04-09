@@ -17,7 +17,7 @@ const WebTokenTest=()=>
     }
     return(
         <div>
-            <button type="button" classname='border py-2 px-4' onClick={clickhandler}>do validate token</button>
+            <button type="button" classname='border-1 border-black py-2 px-4' onClick={clickhandler}>do validate token</button>
         </div>
     )
 }
