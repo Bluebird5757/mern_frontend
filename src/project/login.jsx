@@ -20,11 +20,15 @@ export default function Login() {
         const serverMsg = await axios.post(url,userobj);
         console.log(serverMsg.data);
         if (serverMsg.data.status === true) {
+            localStorage.setItem("token",serverMsg.data.jtoken);
             console.log(serverMsg.data.jtoken);
             if(serverMsg.data.res==='Grower')
             {
-                localStorage.setItem("token",serverMsg.data.jtoken);
                 navigate("/gotogrowerdash");
+            }
+            else
+            {
+                navigate("/gotoconsumerdash");
             }
         }
         else {
@@ -89,7 +93,7 @@ export default function Login() {
                             <button
                                 type="button"
                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                onClick={()=>navigate("/webtokentest")}>
+                                onClick={dofetchsignup}>
                                 Sign in
                             </button>
                         </div>

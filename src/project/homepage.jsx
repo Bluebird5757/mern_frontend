@@ -8,6 +8,7 @@ import Growerdash from './growerdash'
 import Availproducts from './avail-product'
 import ItemsManager from './Itemsmanager'
 import GrowerProfile from './growerprofile'
+import Consumerprofile from './consumerprofile'
 import WebTokenTest from '../axioss/webtokentest'
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -164,7 +165,8 @@ export default function Home() {
         <Route path='/gotoavailproduct' element={<Availproducts></Availproducts>}></Route>
         <Route path='/gotoitemsmanager' element={<ItemsManager></ItemsManager>}></Route>
         <Route path='/gotogrowerprofile' element={<GrowerProfile></GrowerProfile>}></Route>
-        <Route path="/webtokentest" element={<WebTokenTest/>}></Route>
+        {/* <Route path="/webtokentest" element={<WebTokenTest/>}></Route> */}
+        <Route path='/gotoconsumerdash' element={<Consumerprofile></Consumerprofile>}></Route>
     </Routes>
     </>
   )
