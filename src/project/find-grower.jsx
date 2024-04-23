@@ -37,7 +37,7 @@ export default function FindGrower() {
     {
         alert(userobj.city);
         alert(userobj.items);
-        const url=`http://localhost:2007/profile/find-grower?city=`+userobj.city+"&items="+userobj.items;
+        const url=`http://mern-project-2024.onrender.com/profile/find-grower?city=`+userobj.city+"&items="+userobj.items;
         // console.log("hello");
         const serverMsg=await axios.get(url);
         console.log(serverMsg.data);

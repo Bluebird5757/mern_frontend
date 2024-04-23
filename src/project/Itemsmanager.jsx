@@ -7,7 +7,7 @@ export default function ItemsManager() {
 
     async function doFetchitems()
     {
-        const url="http://localhost:2007/profile/fetch-items?email="+email;
+        const url="http://mern-project-2024.onrender.com/profile/fetch-items?email="+email;
         const serverMsg=await axios.get(url);
         console.log(serverMsg.data);
         if(serverMsg.data.status===1)

@@ -33,7 +33,7 @@ export default function GrowerProfile() {
         const serverMsg = await dosavegrower(formData);
         console.log(serverMsg);
         if (serverMsg.data.status === true) {
-            setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname1}`)
+            setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname1}`)
             alert("Saved Successfullyyyyy");
         } else {
             alert(serverMsg.data.msg + "  " + serverMsg.data.err);
@@ -41,7 +41,7 @@ export default function GrowerProfile() {
     }
 
     async function doupdateProfile() {
-        const url = `http://localhost:2007/profile/update-grower-profile`;
+        const url = `http://mern-project-2024.onrender.com/profile/update-grower-profile`;
         const formdata = new FormData();
         for (const prop in obj) {
             formdata.append(prop, obj[prop]);
@@ -50,7 +50,7 @@ export default function GrowerProfile() {
         if (serverMsg.data.status === true) {
             alert("Updated Successfullyyyyy");
             setObj(serverMsg.data.res);
-            setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname1}`)
+            setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname1}`)
         } else {
             alert(serverMsg.data.msg + "  " + serverMsg.data.err);
         }
@@ -60,7 +60,7 @@ export default function GrowerProfile() {
         const serverMsg = await dosearchgrower(obj.email);
         alert(JSON.stringify(serverMsg.data.res));
         setObj(serverMsg.data.res);
-        setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname1}`);
+        setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname1}`);
     }
 
     return (

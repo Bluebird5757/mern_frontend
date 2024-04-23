@@ -21,7 +21,7 @@ export default function Profile() {
         setObj({ ...obj, ["pic"]: event.target.files[0] });
     }
     async function dosave() {
-        const url = `http://localhost:2007/profile/add-profile`;
+        const url = `http://mern-project-2024.onrender.com/profile/add-profile`;
         var formdata = new FormData();
         for (var prop in obj) {
             formdata.append(prop, obj[prop]);
@@ -35,7 +35,7 @@ export default function Profile() {
             alert(serverMsg.data.msg + "  " + serverMsg.data.err);
     }
     async function doupdateProfile() {
-        const url = `http://localhost:2007/profile/update-profile`;
+        const url = `http://mern-project-2024.onrender.com/profile/update-profile`;
         var formdata = new FormData();
         for (var prop in obj) {
             formdata.append(prop, obj[prop]);
@@ -47,18 +47,18 @@ export default function Profile() {
         {
             alert("Updated Successfullyyyyy");
             setObj(serverMsg.data.res);
-            setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname}`)
+            setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname}`)
         }
         else
             alert(serverMsg.data.msg + "  " + serverMsg.data.err);
     }
     async function dofetchprofile()
     {
-        const url=`http://localhost:2007/profile/fetch-profile?email=${obj.email}`;
+        const url=`http://mern-project-2024.onrender.com/profile/fetch-profile?email=${obj.email}`;
         const serverMsg=await axios.get(url);
         alert(JSON.stringify(serverMsg.data.res));
         setObj(serverMsg.data.res);
-        setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname}`);
+        setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname}`);
     }
     return (
         <form>

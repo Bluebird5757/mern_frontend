@@ -35,7 +35,7 @@ export default function Availproducts() {
     }
     async function dosaveitems()
     {
-        const url=`http://localhost:2007/profile/avail-product`;
+        const url=`http://mern-project-2024.onrender.com/profile/avail-product`;
         alert(JSON.stringify(userobj.picpath));
         // var formData = new FormData();
         // console.log(obj)
@@ -50,7 +50,7 @@ export default function Availproducts() {
         //alert(JSON.stringify(serverMsg));
         if (serverMsg.data.status === true)
         {
-            setprev(`http://localhost:2007/uploads/${serverMsg.data.res.picname2}`)
+            setprev(`http://mern-project-2024.onrender.com/uploads/${serverMsg.data.res.picname2}`)
             setuserobj({...userobj,["city"]:serverMsg.data.city})
             alert("Saved Successfullyyyyy");
         }
