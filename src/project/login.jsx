@@ -20,6 +20,7 @@ export default function Login() {
         // const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
 
         // alert(userobj.password);
+        try{
         const serverMsg = await login(userobj);
         console.log(serverMsg.data);
         if (serverMsg.data.status === true) {
@@ -37,6 +38,12 @@ export default function Login() {
         else {
             alert(serverMsg.data.msg + " " + serverMsg.data.err);
         }
+    }
+    catch(err)
+    {
+        alert(err);
+        console.log(err);
+    }
     }
     return (
         <>
