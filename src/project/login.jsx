@@ -15,6 +15,7 @@ export default function Login() {
         setUserObj({ ...userobj, [name]: value })
     }
     async function dofetchsignup() {
+        alert("nfdj");
         const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
 
         // alert(userobj.password);
