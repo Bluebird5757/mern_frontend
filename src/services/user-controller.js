@@ -18,4 +18,7 @@ const dosearchconsumer=(email)=>
 const doValidateTokenWithAxios=()=>{
     return privateReq.get("/profile/token-validation");
 }
-export {dosavegrower,dosearchgrower,dosearchconsumer,dosaveconsumer,doValidateTokenWithAxios};
+const login=(obj)=>{
+    return publicAxios.post("/fetch-signup",obj);
+}
+export {dosavegrower,dosearchgrower,dosearchconsumer,dosaveconsumer,doValidateTokenWithAxios,login};
