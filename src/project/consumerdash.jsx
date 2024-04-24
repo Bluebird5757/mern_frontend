@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'; 
-export default function Growerdash()
-{var navigate1=useNavigate();
+export default function Consumerdash()
+{
+  var navigate1=useNavigate();
   function dofindgrower()
   {
     navigate1("/gotofindgrower");
