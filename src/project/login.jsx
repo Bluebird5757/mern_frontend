@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes,Route } from 'react-router-dom';
 import { useNavigate, useParams } from 'react-router-dom'; 
 import Growerdash from './growerdash';
-import { login } from '../services/user-controller';
+// import { login } from '../services/user-controller';
 export default function Login() {
     // alert("ghghg");
     var navigate=useNavigate();
@@ -17,11 +17,11 @@ export default function Login() {
     }
     async function dofetchsignup() {
         // console.log("sfs");
-        // const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
+        const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
 
         // alert(userobj.password);
         try{
-        const serverMsg = await login(userobj);
+        const serverMsg = await axios.post(url,userobj);
         console.log(serverMsg.data);
         if (serverMsg.data.status === true) {
             localStorage.setItem("token",serverMsg.data.jtoken);
