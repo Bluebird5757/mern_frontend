@@ -29,6 +29,7 @@ export default function Login() {
             console.log(serverMsg.data.res);
             if(serverMsg.data.res==='Grower')
             {
+                alert("hhh");
                 navigate("/gotogrowerdash");
             }
             else if(serverMsg.data.res==='Consumer')
