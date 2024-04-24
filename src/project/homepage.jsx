@@ -167,7 +167,7 @@ export default function Home() {
         <Route path='/gotoitemsmanager' element={<ItemsManager></ItemsManager>}></Route>
         <Route path='/gotogrowerprofile' element={<GrowerProfile></GrowerProfile>}></Route>
         {/* <Route path="/webtokentest" element={<WebTokenTest/>}></Route> */}
-        <Route path='/gotoconsumerdash' element={<Consumerdash></Consumerdash>}></Route>
+        <Route path='/gotoconsumerdash' element={<ItemsManager></ItemsManager>}></Route>
     </Routes>
     </>
   )
