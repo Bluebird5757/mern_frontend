@@ -30,7 +30,7 @@ export default function Login() {
             {
                 navigate("/gotogrowerdash");
             }
-            else
+            else if(serverMsg.data.res==='Consumer')
             {
                 alert("dfd");
                 navigate("/gotoconsumerdash");
