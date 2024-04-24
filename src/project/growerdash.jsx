@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'; 
 export default function Growerdash()
 {var navigate1=useNavigate();
+  useEffect=()=>
+  {
+    alert("jvhf");
+  }
   function doavailproduct()
   {
     navigate1("/gotoavailproduct");
