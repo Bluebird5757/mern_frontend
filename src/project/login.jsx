@@ -17,7 +17,7 @@ export default function Login() {
     }
     async function dofetchsignup() {
         // console.log("sfs");
-        const url = `http://mern-project-2024.onrender.com/profile/fetch-signup`;
+        const url = `https://mern-project-2024.onrender.com/profile/fetch-signup`;
 
         // alert(userobj.password);
         try{
