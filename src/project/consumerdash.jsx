@@ -32,8 +32,8 @@ export default function Consumerdash()
     </div>
   </div>
   
-  <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mb-4 mt-5">
-    {/* <img class="w-full h-56 object-cover object-center" src="https://via.placeholder.com/350x150" alt="Card image"> */}
+  {/* <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mb-4 mt-5">
+    <img class="w-full h-56 object-cover object-center" src="https://via.placeholder.com/350x150" alt="Card image">
     <div class="px-6 py-4">
       <h2 class="text-xl font-semibold text-gray-800 mb-2">Items Manager</h2>
       <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec felis felis.</p>
@@ -41,7 +41,7 @@ export default function Consumerdash()
     <div class="px-6 pt-4 pb-2">
       <input type="button" value="More About It" onClick={doitemsmanager}/>
     </div>
-  </div>
+  </div> */}
 
   
   <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
