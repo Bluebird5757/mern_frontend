@@ -26,15 +26,15 @@ export default function Login() {
         if (serverMsg.data.status === true) {
             localStorage.setItem("token",serverMsg.data.jtoken);
             console.log(serverMsg.data.jtoken);
-            console.log(serverMsg.data.res);
+            // console.log(serverMsg.data.res);
             if(serverMsg.data.res==='Grower')
             {
-                alert("hhh");
+                // alert("hhh");
                 navigate("/gotogrowerdash");
             }
             else if(serverMsg.data.res==='Consumer')
             {
-                alert("dfd");
+                // alert("dfd");
                 navigate("/gotoconsumerdash");
             }
         }

@@ -18,7 +18,6 @@ export default function Consumerdash()
     return (
   
         <>
-        dflkgnpidghsoibhsogibjsdbgsdno
             <div class="grid grid-cols-2 gap-4 container">
   
   <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden mb-4 mt-5">
